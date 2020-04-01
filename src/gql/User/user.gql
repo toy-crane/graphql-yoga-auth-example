@@ -4,3 +4,8 @@ type User {
   name: String!
   username: String
 }
+
+type LoginResponse {
+  user: User
+  token: String
+}
