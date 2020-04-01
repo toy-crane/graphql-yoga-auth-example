@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@types/morgan": "^1.9.0",
+		"bcryptjs": "^2.4.3",
 		"dotenv": "^8.2.0",
 		"graphql-yoga": "^1.18.3",
 		"merge-graphql-schemas": "^1.7.6",
