@@ -1,6 +1,6 @@
 import * as bcrypt from "bcryptjs";
 import { prisma } from "../../../../generated/prisma-client";
-import * as jwt from "jsonwebtoken";
+import generateJWT from "../../../utils/auth/generateJWT";
 
 export default {
   Mutation: {
@@ -16,17 +16,7 @@ export default {
       if (!passwordMatch) {
         throw new Error("Wrong password or Email");
       }
-
-      const token = jwt.sign(
-        {
-          id: user.id,
-          email: user.email
-        },
-        process.env.JWT_SECRET,
-        {
-          expiresIn: "3d"
-        }
-      );
+      const token = generateJWT(user.id, user.email);
       return { token, user };
     }
   }
