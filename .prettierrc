@@ -1,0 +1,29 @@
+{
+	"explorer.confirmDragAndDrop": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"terminal.integrated.rendererType": "dom",
+	"editor.formatOnSave": true,
+	"eslint.autoFixOnSave": false,
+	"files.associations": {
+		"*.js": "javascriptreact",
+		"*.ts": "typescriptreact"
+	},
+	"editor.accessibilitySupport": "off",
+	"window.zoomLevel": 0,
+	"editor.fontSize": 18,
+	"editor.fontWeight": "bold",
+	"kite.showWelcomeNotificationOnStartup": false,
+	"terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+	"workbench.iconTheme": "material-icon-theme",
+	"prettier.tabWidth": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[json, javascript, javascriptreact, typescript, typescriptreact, graphql]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.tslint": true,
+		"source.fixAll.stylelint": true
+	}
+}
