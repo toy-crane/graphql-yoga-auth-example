@@ -1,8 +1,11 @@
 import { shield } from "graphql-shield";
 import { isAuthenticated } from "./rules";
-export const permissions = shield({
-  Query: {
-    currentUser: isAuthenticated
+export const permissions = shield(
+  {
+    Query: {
+      currentUser: isAuthenticated
+    },
+    Mutation: {}
   },
-  Mutation: {}
-});
+  { allowExternalErrors: true }
+);

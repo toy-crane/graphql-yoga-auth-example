@@ -12,6 +12,10 @@ export default {
         throw new Error("Wrong password or Email");
       }
 
+      if (!user.password) {
+        throw new Error("Facebook or Google Client does not has Password");
+      }
+
       const passwordMatch = await bcrypt.compare(password, user.password);
       if (!passwordMatch) {
         throw new Error("Wrong password or Email");
