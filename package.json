@@ -17,7 +17,7 @@
     "@types/passport": "^1.0.3",
     "@types/passport-facebook-token": "^0.4.34",
     "@types/passport-jwt": "^3.0.3",
-    "apollo-server-core": "^2.11.0",
+    "apollo-server-core": "^2.14.2",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "graphql-shield": "^7.2.2",
